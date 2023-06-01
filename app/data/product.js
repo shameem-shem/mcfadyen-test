@@ -17,7 +17,7 @@ export const product = {
         description: "Lurex Linen Viscose Jacket in Conchiglia",
         price: 225,
         color: "Conchiglia",
-        variants:['/images/image-t409.png','/images/image-t411.png'],
+        variants: ["/images/image-t409.png", "/images/image-t411.png"],
         sizes: [
             { label: "XS", value: "xs", available: true },
             { label: "S", value: "s", available: true },

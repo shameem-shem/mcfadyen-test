@@ -19,7 +19,7 @@ export default function ProductDetails({ data }) {
             <h6 className="text-sm font-bold">${data.price}</h6>
             <div className="pt-6 flex text-sm pb-2">
                 <h6 className="font-bold">Color</h6>
-                <p className="">{data.color}</p>
+                <p className="pl-1">{data.color}</p>
             </div>
             <ul className="flex gap-1 pb-6">
                 {data.variants.map((item, index) => {

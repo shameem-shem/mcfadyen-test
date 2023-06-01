@@ -8,6 +8,7 @@ import { useWindowSize } from "@/hooks/useDimensions";
 
 export default function Header() {
     const { width } = useWindowSize();
+    console.log(width)
     return (
         <div className="container mx-auto py-6 pl-[71px] pr-6">
             <div className="flex items-center">

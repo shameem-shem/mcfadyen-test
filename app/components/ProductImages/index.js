@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { IconHeart } from "../icons";
@@ -5,7 +7,7 @@ import { useWindowSize } from "@/hooks/useDimensions";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
 
 export default function ProductImages({ data }) {
     const { width } = useWindowSize();
@@ -14,7 +16,7 @@ export default function ProductImages({ data }) {
             <button className="text-xl ml-auto sticky top-0 p-2 block mr-6 xl:mr-14 z-10">
                 <IconHeart />
             </button>
-            {width >= 1280 ? (
+            {width > 1024 ? (
                 <ul className="flex flex-wrap gap-2 max-w-[562px] mx-auto -mt-9">
                     {data.map((img, index) => {
                         return (
@@ -32,12 +34,7 @@ export default function ProductImages({ data }) {
                     })}
                 </ul>
             ) : (
-                <Swiper
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    modules={[Pagination]}
-                    pagination={{ clickable: true }}
-                >
+                <Swiper>
                     {data.map((img, index) => {
                         return (
                             <SwiperSlide key={index}>

@@ -1,6 +1,5 @@
-"use client";
+'use client'
 
-import Image from "next/image";
 import ProductDescriptions from "./components/ProductDescriptions";
 import ProductImages from "./components/ProductImages";
 import ProductDetails from "./components/ProductDetails";
